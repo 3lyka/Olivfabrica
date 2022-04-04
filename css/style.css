@@ -71,7 +71,12 @@ img {
     
 }
 
-
+@media (max-width:1200px) {
+    .center_card {
+        display: flex;
+        justify-content: center;
+    }
+}
 
   .swiper-slide {
     /* Center slide text vertically */
