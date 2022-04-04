@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link type="image/x-icon" href="img/logo/favicon.ico" rel="shortcut icon">
-    <link type="Image/x-icon" href="img/logo/favicon.ico" rel="icon">
-    <link rel="stylesheet" href="css/swiper-bundle.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link type="image/x-icon" href="/img/logo/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="/img/logo/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="/css/swiper-bundle.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Оливковая ветвь</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
             <nav class="navbar navbar-expand-lg navbar-light rounded-0">
             <div class="container-fluid">
                 <div class="good_company d-flex justify-content-start">
-                    <img src="img/logo/logo.svg" class="img-fluid rounded-0" alt="...">
+                    <img src="/img/logo/logo.svg" class="img-fluid rounded-0" alt="...">
                     <p class="mt-3 ms-2 fw-bold" style="color: #127A7B;" >Оливковая ветвь</p>
                 </div>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
@@ -99,47 +99,42 @@
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item active "><a class="text-decoration-none fw-light text-secondary" href="#">Главная</a></li>
                       <li class="breadcrumb-item active"><a class="text-decoration-none fw-light text-secondary" href="#">Каталог</a></li>
-                      <li class="breadcrumb-item active"><a class="text-decoration-none fw-light text-secondary" href="#">Кухни</a></li>
+                      <li class="breadcrumb-item active"><a class="text-decoration-none fw-light text-secondary" href="#">Техника</a></li>
                     </ol>
                   </nav>
                   <h3>Каталог</h3>
                   <div class="flex-row bd-highlight mb-4 catalog__button col-md-12">
-                    <button type="button" class="btn border border-info m-1 border-3 rounded-0 text-info">Классический стиль</button>
-                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Хай-тек</button>
-                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Модерн</button>
-                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Современный стиль</button>
-                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Скандинавский стиль</button>
+                    <button type="button" class="btn border border-info m-1 border-3 rounded-0 text-info">Мойки</button>
+                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Смесители</button>
+                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Варочные панели</button>
+                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Вытяжки</button>
+                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Посудомойки</button>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row">
-                    <div class="accordion col-md-3 col-sm-12" id="accordionExample">
-                        <div class="accordion-item mb-3">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button text-info fw-bold border border-2 rounded-0 border-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Кухни
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul class="list-unstyled lh-lg">
-                                    <li><a class="text-decoration-none text-dark" href="#">Классический стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Скандинавский стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Классический стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Скандинавский стиль</a></li>
-                                </ul>
-                            </div>
-                          </div>
+            <div class="row center_card">
+                <div class="accordion mb-3 col-md-3 col-sm-12" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-info fw-bold border border-2 rounded-0 border-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Техника
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled lh-lg">
+                                <li><a class="text-decoration-none text-dark" href="#">Мойки</a></li>
+                                <li><a class="text-decoration-none text-dark" href="#">Смесители</a></li>
+                                <li><a class="text-decoration-none text-dark" href="#">Варочные панели</a></li>
+                                <li><a class="text-decoration-none text-dark" href="#">Вытяжки</a></li>
+                                <li><a class="text-decoration-none text-dark" href="#">Посудомойки</a></li>
+                            </ul>
                         </div>
                       </div>
+                    </div>
+                  </div>
                       <div class="accordion accordion mb-3 col-md-3 col-sm-12" id="accordionFlushExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingOne">
@@ -152,101 +147,14 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="container">
-                        <div class="row center_card">
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
 
-                                <img src="img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
-
-                                <img src="img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
-
-                                <img src="img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
-
-                                <img src="img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
-
-                                <img src="img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            
-                        </div>
                     </div>
                 
             </div>
         </div>
     </main>
+    
+
     <div style="background-color: #07607C;">
         <footer class="mt-5 mb-0">
             <div class="container">
@@ -309,7 +217,6 @@
             </div>
         </footer>
     </div>
-
 
         <!--
                                         JS файлы
