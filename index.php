@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require '/head.php'?>
+<?php require '/head.php'; ?>
 
 <body>
     <header class="shadow-sm fixed-top bg-white">
