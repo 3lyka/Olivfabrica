@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<<<<<<< HEAD
 <?php require 'main-parts/head.php'; ?>
+=======
+<?php require '/head.php'; ?>
+>>>>>>> ee920dbe8fcbddd24bc6b98ff578c5189d933003
 
 <body>
 
 <?php require 'main-parts/header.php'; ?>
 
+<<<<<<< HEAD
+=======
+    </div>
+</header>
+
+>>>>>>> ee920dbe8fcbddd24bc6b98ff578c5189d933003
 <!--end menu-->
 <!--start main-->
     <main class="main__slider" style="margin-bottom: 5%;">
