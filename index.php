@@ -33,7 +33,8 @@
 
 <?php require 'block-item/element-coach.php'; ?>
     
-    <?php require 'main-parts/footer.php'; ?>
+<?php require 'main-parts/footer.php'; ?>
+
     <!--
                                         JS файлы
 -->
