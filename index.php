@@ -1,281 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<<<<<<< HEAD
 <?php require 'main-parts/head.php'; ?>
-=======
-<?php require '/head.php'; ?>
->>>>>>> ee920dbe8fcbddd24bc6b98ff578c5189d933003
 
 <body>
-
+<!--start menu-->
 <?php require 'main-parts/header.php'; ?>
 
-<<<<<<< HEAD
-=======
-    </div>
-</header>
-
->>>>>>> ee920dbe8fcbddd24bc6b98ff578c5189d933003
 <!--end menu-->
-<!--start main-->
-    <main class="main__slider" style="margin-bottom: 5%;">
-        <div class="container" style="margin-top: 150px;">
-            <div class="row">
-                <div class="col-sm-6 mt-5">
-                    <div class="h1__slider__menu">
-                        <h1>
-                            Кухни на заказ <br>
-                                                                        от производителя
-                        </h1>
-                        <p class="mt-3">
-                            Соберите кухню с индивидуальным <br>
-                                                                        дизайном на конструкторе и узнайте
-                                                                        ее стоимость
-                        </p>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger b-0 rounded-0 mt-3" style="width: 200px; height: 60px;">Конструктор</button>
-                    </div>
-                </div>
-                <div class="col-sm-6 mt-5">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/slider/slider-1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/slider/slider-1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/slider/slider-1.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-next border border-4 border-white position-absolute bottom-0 start-0 ms-5" style="background-color:#1A8AAD;" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                    <span class="visually-hidden">Next</span>
-                                                                </button>
-                        <button class="carousel-control-prev border border-4 border-white position-absolute bottom-0 start-0" style="background-color:#BABABA;" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                    <span class="visually-hidden">Previous</span>
-                                                                </button>
-                    </div>
-                </div>
-            </div>
-    </main>
-    <main class="popular__slider bg-light mb-5">
-        <div class="container">
-            <div class="row mb-5">
-                <h1 class="mt-5 center__h1__popular">
-                    Популярные товары
-                </h1>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper mb-5">
-                        <div class="swiper-slide mb-5">
-                            <div class="card b-0 rounded-0">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
+<!--start main slider-->
+<?php require 'main-slider.php'; ?>
 
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide mb-5">
-                            <div class="card b-0 rounded-0">
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide mb-5">
-                            <div class="card b-0 rounded-0">
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide mb-5">
-                            <div class="card b-0 rounded-0">
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide mb-5">
-                            <div class="card b-0 rounded-0">
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide mb-5">
-                            <div class="card b-0 rounded-0">
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide mb-5">
-                            <div class="card b-0 rounded-0">
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--
-                        <div class="swiper-button-next text-white border border-5 border-white" style="background-color: #1A8AAD;"></div>
-                        <div class="swiper-button-prev text-white border border-5 border-white" style="background-color:#BABABA;"></div>
-                        -->
-                    <div
-                        class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic">
-                    </div>
-                </div>
-            </div>
-        </div>
-            </div>
-    </main>
-    <div class="container">
-        <div class="row justify-content-center" style="background-color: #1A8AAD;">
-            <div class="col-md-6 mb-0" style="background-image: url(img/banner.png);background-repeat: no-repeat;">
-                <h4 class="ms-4 mt-5 text-white">
-                    Бесплатная <br>
-                            консультация <br>
-                            от дизайнера
-                </h4>
-                <p class="text-white ms-4">
-                    Lorem ipsum dolor sit amet, <br>
-                        consectetur adipiscing elit.
-                </p>
+<?php require 'popular-tov.php'; ?>
 
-            </div>
+<?php require 'forms-free-design.php'; ?>
 
-            <div class="col-md-6 p-4">
-                <form class="form" id="myForm" role="form">
-                    <div class="mb-3">
-                        <label for="inputName" class="form-label text-white">Ваше имя</label>
-                        <input type="text" class="phone-field form-control border-white border-3 rounded-0 bg-info text-white" id="inputName" name="name">
-                        <div class="mb-3 mt-3">
-                            <label for="number" class="form-label text-white">Номер телефона</label>
-                            <input type="tel" name="phone" class="phone-field form-control phone-field border-white border-3 rounded-0 bg-info text-white" id="exampleInputTel" data-rule-required="true" data-rule-minlength="10" >
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary border-white rounded-0 text-white border-0 p-2" style="background-color:#07607C;">Оставить заявку</button>
-                </form>
-            </div>
-        </div>
-    </div>
+<?php require 'index-catalog.php'; ?>
 
-    <div class="container mt-5">
-        <div class="row">
-            <h1 class="mt-5 center__h1__popular">Каталог</h1>
-            <div class="d-flex flex-row bd-highlight mb-4 catalog__button">
-                <button type="button" class="btn border border-info m-1 border-3 rounded-0 text-info">Кухни</button>
-                <button type="button" class="btn border border-light m-1 border-3 rounded-0">Техника</button>
-                <button type="button" class="btn border border-light m-1 border-3 rounded-0">Шкафы купе</button>
-            </div>
-
-            <div class="swiper mySwiper mb-5">
-                <div class="swiper-wrapper p-0 m-0">
-                    <div class="swiper-slide">
-                        <div class="card border-0 rounded-0 mb-5" style="height: 18em;">
-                            <img src="img/card_tov/Card-group.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 13em;">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Классический стиль</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card border-0 rounded-0 mb-5" style="height: 18em;">
-                            <img src="img/card_tov/Card-group.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 13em;">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Классический стиль</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card border-0 rounded-0 mb-5" style="height: 18em;">
-                            <img src="img/card_tov/Card-group.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 13em;">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Классический стиль</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card border-0 rounded-0 mb-5" style="height: 18em;">
-                            <img src="img/card_tov/Card-group.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 13em;">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Классический стиль</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card border-0 rounded-0 mb-5" style="height: 18em;">
-                            <img src="img/card_tov/Card-group.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 13em;">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Классический стиль</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div
-                    class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic">
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
     <div class="bg-light">
         <div class="container">
@@ -387,7 +128,7 @@
                         <div class="mb-3">
                             <label for="recipient-tel" class="col-form-label">Номер телефона:</label>
                             <input
-                                type="text"
+                                type="tel"
                                 class="phone-field form-control rounded-0"
                                 name="phone"
                                 placeholder="+7(___)___-____"
@@ -597,6 +338,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     
     <?php require 'main-parts/footer.php'; ?>
