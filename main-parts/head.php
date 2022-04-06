@@ -9,4 +9,5 @@
     <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Оливковая ветвь</title>
+    <?php require 'db.php'; ?>
 </head>
