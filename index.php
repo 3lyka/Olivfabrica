@@ -663,7 +663,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>sss
 
     <?php require 'main-parts/footer.php'?>
 
