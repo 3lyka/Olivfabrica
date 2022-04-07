@@ -41,18 +41,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="card border-0 rounded-0 mb-5" style="height: 18em;">
-                            <img src="img/card_tov/Card-group.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 13em;">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Классический стиль</h5>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 <div
-                    class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic">
+                    class="swiper-pagination">
                 </div>
             </div>
         </div>
