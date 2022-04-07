@@ -1,5 +1,7 @@
 /* js Элементы */
 
+//swiper товаров
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -34,6 +36,8 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+//валидация модального окна
+
       // вешаем маску на телефон
       $('.phone-field').inputmask("+7(999)999-9999");
     
@@ -64,6 +68,8 @@ var swiper = new Swiper(".mySwiper", {
           return;
       });
 
+
+//мегаменю
 
       document.addEventListener("DOMContentLoaded", function(){
         /////// Prevent closing from click inside dropdown
