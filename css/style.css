@@ -101,3 +101,28 @@ img {
       height: 48px;
       justify-content: center;
   }
+
+
+  .filterDiv {
+    float: left;
+    margin: 5px;
+    display: none; /* Скрыто по умолчанию */
+  }
+  
+  /* В класс "show" добавляется к отфильтрованные элементы */
+  .show {
+    display: block;
+  }
+  
+  /* Стиль кнопок */
+  .btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Добавить темный фон для активной кнопки */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }

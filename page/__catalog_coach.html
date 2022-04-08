@@ -41,11 +41,6 @@
                                                 <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
                                                 <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
                                                 <li><a class="text-decoration-none text-dark" href="#">Скандинавский стиль</a></li>
-                                                <li><a class="text-decoration-none text-dark" href="#">Классический стиль</a></li>
-                                                <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
-                                                <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
-                                                <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
-                                                <li><a class="text-decoration-none text-dark" href="#">Скандинавский стиль</a></li>
                                             </ul>
                                         </div>  <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
@@ -86,7 +81,7 @@
                 </div> <!-- navbar-collapse.// -->
             </div>
             <a class="navbar-brand" href="#"><span class="fw-bold fs-5"> 8 812 317 22 42 </span>
-                <br><img src="img/logo/map-pin.svg" alt="" class="p-0 m-0"><span class="fs-6 ms-1">Санкт Петербург</span></a> <!-- container-fluid.// -->
+                <br><img src="/img/logo/map-pin.svg" alt="" class="p-0 m-0"><span class="fs-6 ms-1">Санкт Петербург</span></a> <!-- container-fluid.// -->
             </nav>
     
         </div>
@@ -103,13 +98,14 @@
                     </ol>
                   </nav>
                   <h3>Каталог</h3>
-                  <div class="flex-row bd-highlight mb-4 catalog__button col-md-12">
-                    <button type="button" class="btn border border-info m-1 border-3 rounded-0 text-info">Классический стиль</button>
-                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Хай-тек</button>
-                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Модерн</button>
-                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Современный стиль</button>
-                    <button type="button" class="btn border border-light m-1 border-3 rounded-0">Скандинавский стиль</button>
-                </div>
+                    <div id="myBtnContainer" class="mb-4">
+                        <button class="btn active" onclick="filterSelection('all')">Все товары</button>
+                        <button class="btn" onclick="filterSelection('cars')"> Хай-тек</button>
+                        <button class="btn" onclick="filterSelection('animals')"> Модерн</button>
+                        <button class="btn" onclick="filterSelection('fruits')"> Современный стиль</button>
+                        <button class="btn" onclick="filterSelection('colors')"> Скандинавский стиль</button>
+                        <button class="btn" onclick="filterSelection('colors')"> Классический стиль</button>
+                      </div>
             </div>
         </div>
 
@@ -125,11 +121,6 @@
                           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-unstyled lh-lg">
-                                    <li><a class="text-decoration-none text-dark" href="#">Классический стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Скандинавский стиль</a></li>
                                     <li><a class="text-decoration-none text-dark" href="#">Классический стиль</a></li>
                                     <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
                                     <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
@@ -155,91 +146,168 @@
                     </div>
                     <div class="container">
                         <div class="row center_card">
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
 
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
-
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
-
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
-
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
-                            <div class="card b-0 m-3 rounded-0 col-3">
-                                <!--Карточка с акцией-->
-                                <p class="m-0 p-2 position-absolute top-0 start-0 text-white b-0"
-                                    style="background-color: #07607C;">17%</p>
-                                <!--Карточка с акцией-->
-
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
-                                    <a href="#"
-                                        class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
-                                </div>
-                            </div>
+                            <!-- Control buttons -->
+  
+  <!-- Фильтруемые элементы. Примечание что некоторые из них имеют несколько имен классов (это может быть использовано, если они принадлежат к нескольким категориям) -->
+  <div class="container">
+    <div class="filterDiv cars">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv colors fruits">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv cars">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv colors">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv cars animals">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv colors">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv animals">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv animals">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv fruits">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv fruits animals">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv fruits">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv fruits">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+    <div class="filterDiv animals">                            <div class="card b-0 rounded-0">
+        <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+        <div class="card-body">
+            <h5 class="card-title">Кухня "ОК005"</h5>
+            <p class="card-text m-0">Стиль: Классический</p>
+            <p class="card-text m-0">Цвет: Черный</p>
+            <p class="card-text m-0">Материал: ЛДСП</p>
+            <a href="#"
+                class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
+                style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+        </div>
+    </div></div>
+  </div>
                             
                         </div>
                         <nav aria-label="Page navigation example">
