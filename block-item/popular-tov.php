@@ -15,7 +15,7 @@
                             <div class="card b-0 rounded-0">
                                 <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
                                 <div class="card-body">
-                                    <h5 class="card-title">Кухня "ОК005"</h5>
+                                    <h5 class="card-title"><?php echo $swiper ["tittle"];?></h5>
                                     <p class="card-text m-0">Стиль: Классический</p>
                                     <p class="card-text m-0">Цвет: Черный</p>
                                     <p class="card-text m-0">Материал: ЛДСП</p>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
 
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     
                     </div>
                     
