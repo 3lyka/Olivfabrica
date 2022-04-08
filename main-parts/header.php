@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="good_company d-flex justify-content-start">
                 <img src="img/logo/logo.svg" class="img-fluid rounded-0" alt="...">
-                <p class="mt-3 ms-2 fw-bold" style="color: #127A7B;" >Оливковая ветвь</p>
+                <p class="mt-3 ms-2 fw-bold" style="color: #127A7B;">Оливковая ветвь</p>
             </div>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,7 +66,6 @@
                     <li class="nav-item active fw-normal"> <a class="nav-link" href="#">Акции </a> </li>
                     <li class="nav-item active fw-normal"> <a class="nav-link" href="#">О компании </a> </li>
                     <li class="nav-item active fw-normal"> <a class="nav-link" href="#">Контакты </a> </li>
-                    <li class="nav-item active fw-normal"> <a class="nav-link" href="#">Полезная информация </a> </li>
                 </ul>
             </div> <!-- navbar-collapse.// -->
         </div>
