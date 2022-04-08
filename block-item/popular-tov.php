@@ -6,6 +6,11 @@
                 </h1>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper mb-5">
+
+                    <?php
+                     get_swiper_all ()
+                     ?>
+
                         <div class="swiper-slide mb-5">
                             <div class="card b-0 rounded-0">
                                 <!--Карточка с акцией-->
