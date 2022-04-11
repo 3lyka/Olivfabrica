@@ -26,11 +26,6 @@
                                             <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Скандинавский стиль</a></li>
-                                            <li><a class="text-decoration-none text-dark" href="#">Классический стиль</a></li>
-                                            <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
-                                            <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
-                                            <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
-                                            <li><a class="text-decoration-none text-dark" href="#">Скандинавский стиль</a></li>
                                         </ul>
                                     </div>  <!-- col-megamenu.// -->
                                 </div><!-- end col-3 -->

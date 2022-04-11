@@ -6,3 +6,16 @@ css как css
 img - это картинки index.html 
 main.parts в ней находится head header footer, они идут вставкой на все страницы, можно поредачить и вывод будет намного удобнее
 page - временная папка для расперделения файлов
+
+Это штука для работы с категориями товаров, душно, но терпимо, через jQuery настроена фильтрация, тянется с базы SQL, далее будет понятно
+
+                <div id="myBtnContainer" class="mb-4">
+                    <button class="btn active" onclick="filterSelection('all')">Все товары</button>
+                    <button class="btn" onclick="filterSelection('hi-tech')"> Хай-тек</button>
+                    <button class="btn" onclick="filterSelection('modern')"> Модерн</button>
+                    <button class="btn" onclick="filterSelection('future-style')"> Современный стиль</button>
+                    <button class="btn" onclick="filterSelection('scandi-style')"> Скандинавский стиль</button>
+                    <button class="btn" onclick="filterSelection('classic-style')"> Классический стиль</button>
+                </div>
+
+                
