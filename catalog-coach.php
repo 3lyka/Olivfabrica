@@ -77,16 +77,16 @@
                     <!-- Control buttons -->
 
                     <!-- Фильтруемые элементы. Примечание что некоторые из них имеют несколько имен классов (это может быть использовано, если они принадлежат к нескольким категориям) -->
-                    <div class="container">
-                    <?php
+            <div class="container catalogCoach">
+                   
+                   <?php
                     $catalogСoach = get_catalogСoach_all ();
-                    foreach ($catalogСoach as $catalogСoach): 
-                    ?>
+                    foreach ($catalogСoach as $catalogСoach): ?>
 
-                            <div class="filterDiv catalogCoach">
+                            <div class="filterDiv hi-tech">
                                 <div class="card b-0 rounded-0">
                                     <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                    <div class="card-body">
+                                    <div class="card-body catalogCoach">
                                         <h5 class="card-title"><?php echo $catalogCoach ["tittle_ccoach"];?></h5>
                                         <p class="card-text m-0"><?php echo $catalogCoach ["style__ccoach"];?></p>
                                         <p class="card-text m-0">Цвет: Черный</p>
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-
+        </div>
 
         </div>
         </div>
