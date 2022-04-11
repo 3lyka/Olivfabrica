@@ -13,15 +13,15 @@
 
                             <div class="swiper-slide mb-5">
                             <div class="card b-0 rounded-0">
-                                <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+                                <img src="/img/card_tov/<?php echo $swiper ["img"];?>" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php echo $swiper ["tittle"];?></h5>
-                                    <p class="card-text m-0">Стиль: Классический</p>
-                                    <p class="card-text m-0">Цвет: Черный</p>
-                                    <p class="card-text m-0">Материал: ЛДСП</p>
+                                    <p class="card-text m-0"><?php echo $swiper ["style"];?></p>
+                                    <p class="card-text m-0"><?php echo $swiper ["color"];?></p>
+                                    <p class="card-text m-0"><?php echo $swiper ["material"];?></p>
                                     <a href="#"
                                         class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+                                        style="padding: 1% 2% 1% 2%;"><?php echo $swiper ["price"];?> ₽ &#8594;</a>
                                 </div>
                             </div>
                         </div>

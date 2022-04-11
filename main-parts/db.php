@@ -13,3 +13,9 @@ function get_swiper_all () {
     $swiper = $db -> query("SELECT * FROM card");
     return $swiper;
 }
+
+function get_slide_all () {
+    global $db;
+    $slide = $db -> query("SELECT * FROM card_sale");
+    return $slide;
+}
