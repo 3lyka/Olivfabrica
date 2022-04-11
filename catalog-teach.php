@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <?php require 'main-parts/head.php'; ?>
 <body>
 <?php require 'main-parts/header.php'; ?>
 
-    <main style="margin-top:180px;" class="catalogCoach">
+    <main style="margin-top:180px;">
         <div class="container">
             <div class="row">
                 <nav aria-label="breadcrumb">
@@ -19,7 +20,7 @@
                     </ol>
                 </nav>
                 <h3>Каталог</h3>
-                <div id="myBtnContainer" class="mb-4 filter-button">
+                <div id="myBtnContainer" class="mb-4">
                     <button class="btn active" onclick="filterSelection('all')">Все товары</button>
                     <button class="btn" onclick="filterSelection('hi-tech')"> Хай-тек</button>
                     <button class="btn" onclick="filterSelection('modern')"> Модерн</button>
@@ -316,11 +317,7 @@
         </div>
         </div>
     </main>
-
-
-    
     <?php require 'main-parts/footer.php'; ?>
-
 
     <!--
                                         JS файлы
