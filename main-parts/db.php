@@ -21,21 +21,8 @@ function get_slide_all () {
 }
 
 
-function get_catalogCoach_all () {
+function get_catalogСoach_all () {
     global $db;
-    $catalogCoach = $db -> query("SELECT * FROM catalogCoach");
-    return $catalogCoach;
-}
-
-
-function get_catalogCloset_all () {
-    global $db;
-    $catalogCloset = $db -> query("SELECT * FROM catalogCloset");
-    return $catalogCloset;
-}
-
-function get_catalogTeach_all () {
-    global $db;
-    $catalogTeach = $db -> query("SELECT * FROM catalogTeach");
-    return $catalogTeach;
+    $catalogСoach = $db -> query("SELECT * FROM catalogcoach");
+    return $catalogСoach;
 }
