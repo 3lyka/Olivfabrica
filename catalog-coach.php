@@ -82,7 +82,7 @@
                     $catalogСoach = get_catalogСoach_all ();
                     foreach ($catalogСoach as $catalogСoach): ?>
 
-                            <div class="filterDiv catalogCoach hi-tech">
+                            <div class="filterDiv catalogCoach <?php echo $catalogCoach ["category_ccoach"];?>">
                                 <div class="card b-0 rounded-0">
                                     <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
                                     <div class="card-body">
