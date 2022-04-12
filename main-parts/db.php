@@ -21,8 +21,8 @@ function get_slide_all () {
 }
 
 
-function get_catalogСoach_all () {
+function get_filter_all () {
     global $db;
-    $catalogСoach = $db -> query("SELECT * FROM catalogcoach");
-    return $catalogСoach;
+    $filter = $db -> query("SELECT * FROM catalogcoach");
+    return $filter;
 }

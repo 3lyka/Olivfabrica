@@ -8,7 +8,7 @@
 <?php require 'main-parts/header.php'; ?>
 
     <main style="margin-top:180px;">
-        <div class="container">
+        <div class="container p-0 m-0 m-auto">
             <div class="row">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container p-0 m-0 m-auto">
             <div class="row">
                 <div class="accordion col-md-3 col-sm-12" id="accordionExample">
                     <div class="accordion-item mb-3">
@@ -71,10 +71,15 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-4">
-                <div class="row center_card">
-                            <div class="filter hi-tech">
-                                <div class="card b-0 rounded-0">
+            </div>
+            <div class="container mt-4 p-0 m-0 m-auto">
+                <div class="row">
+                            <?php
+                             $filter = get_filter_all ();
+                             foreach ($filter as $filter): ?>
+
+                            <div class="filter col-lg-3 col-sm-6 center_card">
+                                <div class="card mb-2 b-0 rounded-0">
                                     <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
                                     <div class="card-body">
                                         <h5 class="card-title">Кухня "ОК005"</h5>
@@ -86,10 +91,12 @@
                                             style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
+                                
+                    <?php endforeach; ?>
 
                     </div>
-                    </div>
+            </div>
 
 
         </div>
