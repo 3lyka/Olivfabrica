@@ -2,10 +2,10 @@
 <html lang="en">
 
 <?php require 'main-parts/head.php'; ?>
+
 <body>
+
 <?php require 'main-parts/header.php'; ?>
-
-
 
     <main style="margin-top:180px;">
         <div class="container">
@@ -21,13 +21,13 @@
                     </ol>
                 </nav>
                 <h3>Каталог</h3>
-                <div id="myBtnContainer" class="mb-4 filter-button">
-                    <button class="btn active" onclick="filterSelection('all')">Все товары</button>
-                    <button class="btn" onclick="filterSelection('hi-tech')"> Хай-тек</button>
-                    <button class="btn" onclick="filterSelection('modern')"> Модерн</button>
-                    <button class="btn" onclick="filterSelection('future-style')"> Современный стиль</button>
-                    <button class="btn" onclick="filterSelection('scandi-style')"> Скандинавский стиль</button>
-                    <button class="btn" onclick="filterSelection('classic-style')"> Классический стиль</button>
+                <div id="myBtnContainer" class="mb-4">
+                    <button class="btn active"  id="all-coach">Все товары</button>
+                    <button class="btn" id="hi-tech"> Хай-тек</button>
+                    <button class="btn"  id="modern"> Модерн</button>
+                    <button class="btn"  id="future-style"> Современный стиль</button>
+                    <button class="btn"  id="scandi-style"> Скандинавский стиль</button>
+                    <button class="btn"  id="classic-style"> Классический стиль</button>
                 </div>
             </div>
         </div>
@@ -71,24 +71,14 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container mt-4">
                 <div class="row center_card">
-
-                    <!-- Control buttons -->
-
-                    <!-- Фильтруемые элементы. Примечание что некоторые из них имеют несколько имен классов (это может быть использовано, если они принадлежат к нескольким категориям) -->
-            <div class="container catalogCoach">
-                   
-                   <?php
-                    $catalogСoach = get_catalogСoach_all ();
-                    foreach ($catalogСoach as $catalogСoach): ?>
-
-                            <div class="filterDiv hi-tech">
+                            <div class="filter hi-tech">
                                 <div class="card b-0 rounded-0">
                                     <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
-                                    <div class="card-body catalogCoach">
-                                        <h5 class="card-title"><?php echo $catalogCoach ["tittle_ccoach"];?></h5>
-                                        <p class="card-text m-0"><?php echo $catalogCoach ["style__ccoach"];?></p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Кухня "ОК005"</h5>
+                                        <p class="card-text m-0">Стиль: Классический</p>
                                         <p class="card-text m-0">Цвет: Черный</p>
                                         <p class="card-text m-0">Материал: ЛДСП</p>
                                         <a href="#"
@@ -96,67 +86,16 @@
                                             style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
                                     </div>
                                 </div>
-                            </div>
-                            <?php endforeach; ?>
-                        </div>
+                                </div>
 
                     </div>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination d-flex justify-content-center mt-5">
-                            <li class="page-item">
-                                <a class="page-link text-dark" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link text-dark" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="container">
-                        <div class="row justify-content-center" style="background-color: #1A8AAD;">
-                            <div class="col-md-6 mb-0"
-                                style="background-image: url(/img/banner.png);background-repeat: no-repeat;">
-                                <h4 class="ms-4 mt-5 text-white">
-                                    Бесплатная <br>
-                                                консультация <br>
-                                                от дизайнера
-                                </h4>
-                                <p class="text-white ms-4">
-                                    Lorem ipsum dolor sit amet, <br>
-                                            consectetur adipiscing elit.
-                                </p>
-
-                            </div>
-
-                            <div class="col-md-6 p-4">
-                                <form class="form" id="myForm" role="form">
-                                    <div class="mb-3">
-                                        <label for="inputName" class="form-label text-white">Ваше имя</label>
-                                        <input type="text" class="phone-field form-control border-white border-3 rounded-0 bg-info text-white" id="inputName" name="name">
-                                        <div class="mb-3 mt-3">
-                                            <label for="number" class="form-label text-white">Номер телефона</label>
-                                            <input type="tel" name="phone" class="phone-field form-control phone-field border-white border-3 rounded-0 bg-info text-white" id="exampleInputTel" data-rule-required="true" data-rule-minlength="10" >
-                                        </div>
-
-                                        <button type="submit" class="btn btn-primary border-white rounded-0 text-white border-0 p-2" style="background-color:#07607C;">Оставить заявку</button>
-                                </form>
-                            </div>
-                        </div>
                     </div>
-                </div>
-        </div>
+
 
         </div>
         </div>
     </main>
-    
+
     <?php require 'main-parts/footer.php'; ?>
 
 
