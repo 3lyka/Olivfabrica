@@ -22,12 +22,9 @@
                 </nav>
                 <h3>Каталог</h3>
                 <div id="myBtnContainer" class="mb-4">
-                    <button class="btn active"  id="all-coach">Все товары</button>
-                    <button class="btn" id="hi-tech"> Хай-тек</button>
-                    <button class="btn"  id="modern"> Модерн</button>
-                    <button class="btn"  id="future-style"> Современный стиль</button>
-                    <button class="btn"  id="scandi-style"> Скандинавский стиль</button>
-                    <button class="btn"  id="classic-style"> Классический стиль</button>
+                    <button class="btn active" onclick="filterSelection('all')">Все товары</button>
+                    <button class="btn" onclick="filterSelection('hi-tech')"> Хай-тек</button>
+                    <button class="btn" onclick="filterSelection('modern')"> Модерн</button>
                 </div>
             </div>
         </div>
@@ -64,9 +61,17 @@
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                                body.</div>
+                            <div class="accordion-body">
+                                <ul class="list-unstyled lh-lg">
+                                    <li>
+                                    <p>Цвет</p>
+                                    <div class="form-check" id="myBtnContainer">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('black')">
+                                    <label class="form-check-label" for="defaultCheck1"> Черный</label>
+</div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,7 +83,7 @@
                              $filter = get_filter_all ();
                              foreach ($filter as $filter): ?>
 
-                            <div class="filter col-lg-3 col-sm-6 center_card">
+                            <div class="filter col-lg-3 col-sm-6 center_card black <?php echo $filter ["category"];?>">
                                 <div class="card mb-2 b-0 rounded-0">
                                     <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
                                     <div class="card-body">
@@ -101,6 +106,7 @@
 
         </div>
         </div>
+        <?php require 'block-item/forms-free-design.php'; ?>
     </main>
 
     <?php require 'main-parts/footer.php'; ?>
