@@ -32,21 +32,21 @@
 <?php require 'block-item/sovet-design.php'; ?>
 
 <?php require 'block-item/element-coach.php'; ?>
-    
+
 <?php require 'main-parts/footer.php'; ?>
 
-    <!--
-                                        JS файлы
+<!--
+JS файлы
 -->
-    <!-- Swiper JS -->
-    <script src="js/swiper-bundle.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jQuery.js"></script>
-    <script src="js/app.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jQuery.js"></script>
+<script src="js/app.js"></script>
 
-    <!--
-                                        JS файлы
-    -->
+<!--
+JS файлы
+-->
 </body>
 
 </html>
