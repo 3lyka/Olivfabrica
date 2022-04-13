@@ -21,7 +21,7 @@
                     </ol>
                 </nav>
                 <h3>Каталог</h3>
-                <div id="myBtnContainer" class="mb-4">
+                <div id="myBtnContainer" class="m-0 p-3">
                     <button class="btn active" onclick="filterSelection('all')">Все товары</button>
                     <button class="btn" onclick="filterSelection('hi-tech')"> Хай-тек</button>
                     <button class="btn" onclick="filterSelection('modern')"> Модерн</button>
@@ -42,11 +42,10 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-unstyled lh-lg">
-                                    <li><a class="text-decoration-none text-dark" href="#">Классический стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
-                                    <li><a class="text-decoration-none text-dark" href="#">Скандинавский стиль</a></li>
+                                    <li><a class="text-decoration-none text-dark" href="#">Угловая</a></li>
+                                    <li><a class="text-decoration-none text-dark" href="#">Прямая</a></li>
+                                    <li><a class="text-decoration-none text-dark" href="#">П- образная</a></li>
+                                    <li><a class="text-decoration-none text-dark" href="#">Круглая</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -62,15 +61,37 @@
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <ul class="list-unstyled lh-lg">
-                                    <li>
-                                    <p>Цвет</p>
+
+                            <!--Тут подумай как следует, надо ли оно вообще? Может сделать также как и на сайте оливфабрики?-->    
+
+                                    <p class="fw-bold m-2">Цвет</p>
                                     <div class="form-check" id="myBtnContainer">
+                                    <div>
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('black')">
                                     <label class="form-check-label" for="defaultCheck1"> Черный</label>
-</div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                    <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('red')">
+                                    <label class="form-check-label" for="defaultCheck1"> Красный</label>
+                                    </div>
+                                    </div>
+                                    <p class="fw-bold m-2">Цвет</p>
+                                    <div class="form-check" id="myBtnContainer">
+                                    <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('black')">
+                                    <label class="form-check-label" for="defaultCheck1"> Черный</label>
+                                    </div>
+                                    <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('black')">
+                                    <label class="form-check-label" for="defaultCheck1"> Черный</label>
+                                    </div>
+                                    <div>
+                                    <button class="btn active mt-3" onclick="filterSelection('all')">Сбросить</button>
+                                    </div>
+                                    </div>
+                                    
+                                    
+
                             </div>
                         </div>
                     </div>
@@ -79,21 +100,22 @@
             </div>
             <div class="container mt-4 p-0 m-0 m-auto">
                 <div class="row">
-                            <?php
+                           
+                           <?php
                              $filter = get_filter_all ();
                              foreach ($filter as $filter): ?>
 
-                            <div class="filter col-lg-3 col-sm-6 center_card black <?php echo $filter ["category"];?>">
+                            <div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filter ["color_id"];?> <?php echo $filter ["category"];?>">
                                 <div class="card mb-2 b-0 rounded-0">
-                                    <img src="/img/card_tov/card-tovar.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+                                    <img src="/img/card_tov/<?php echo $filter ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Кухня "ОК005"</h5>
-                                        <p class="card-text m-0">Стиль: Классический</p>
-                                        <p class="card-text m-0">Цвет: Черный</p>
-                                        <p class="card-text m-0">Материал: ЛДСП</p>
+                                        <h5 class="card-title m-0">Название: <?php echo $filter ["tittle"];?></h5>
+                                        <p class="card-text m-0">Стиль: <?php echo $filter ["style"];?></p>
+                                        <p class="card-text m-0">Цвет: <?php echo $filter ["color"];?></p>
+                                        <p class="card-text m-0">Материал: <?php echo $filter ["material"];?></p>
                                         <a href="#"
                                             class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                            style="padding: 1% 2% 1% 2%;">от 56 200 ₽ &#8594;</a>
+                                            style="padding: 1% 2% 1% 2%;"><?php echo $filter ["price"];?> ₽ &#8594;</a>
                                     </div>
                                 </div>
                             </div>

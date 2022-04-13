@@ -1,5 +1,40 @@
 /* js Элементы */
 
+//swiper товаров
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  watchOverflow:true,
+  slidesPerColumn:3,
+  grabCursor:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    "@0.75": {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    "@1.00": {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    "@1.50": {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
 
 filterSelection("all")
 function filterSelection(c) {
@@ -47,44 +82,8 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
+}; 
 
-
-//swiper товаров
-
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  watchOverflow:true,
-  slidesPerColumn:3,
-  grabCursor:true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    "@0.00": {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    "@0.75": {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    "@1.00": {
-      slidesPerView: 3,
-      spaceBetween: 40,
-    },
-    "@1.50": {
-      slidesPerView: 4,
-      spaceBetween: 50,
-    },
-  },
-});
 
 //валидация модального окна
 
