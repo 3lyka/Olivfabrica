@@ -9,9 +9,7 @@
 <main style="margin-top: 7%;">
 
 <div class="container mb-5">
-<?php
-$filter = get_filter_by_id($_GET['id']);
-?>
+
 <div class="row filter">
 
 <h3>Кухня "ОК005"</h3>
@@ -20,6 +18,9 @@ $filter = get_filter_by_id($_GET['id']);
 <div class="carousel-inner">
 <div class="carousel-item active">
 <img src="/img/card_tov/card-tovar.png" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+<img src="/img/slider/slider-1.png" class="d-block w-100" alt="...">
 </div>
 </div>
 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

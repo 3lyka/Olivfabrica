@@ -22,15 +22,6 @@ function get_slide_all () {
 
 //вывод данных на catalog-coach.php 
 //Также создание шаблона товарв
-
-function get_filter_by_id ($id) {
-    global $db;
-    $catalogcoach = $db -> query("SELECT * FROM catalogcoach WHERE id = $id");
-    foreach ($catalogcoach as $filter) {
-            return $filter;
-    }
-}
-
 function get_filter_all () {
     global $db;
     $filter = $db -> query("SELECT * FROM catalogcoach");
