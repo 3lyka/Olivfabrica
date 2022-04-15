@@ -14,7 +14,7 @@
 
 <div class="row filter">
 
-<h3>Кухня "ОК005"</h3>
+<h3><?php echo $filter ["tittle"];?></h3>
 <div class="col-sm-6 mt-4">
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 <div class="carousel-inner">
@@ -36,14 +36,13 @@
 </div>
 </div>
 <div class="col-sm-6 mt-5">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed erat lobortis erat ut amet velit at sagittis. In nunc id diam ut risus. Quam elementum viverra et quis diam accumsan, lectus morbi rhoncus. Commodo, lacus molestie enim vitae consequat tellus.</p>
+<p><?php echo $filter ["description"];?></p>
 <div class="card-body lh-lg">
-<p class="card-text m-0">Стиль: Классический</p>
-<p class="card-text m-0">Цвет: Черный</p>
-<p class="card-text m-0">Материал: ЛДСП</p>
-<p class="card-text m-0">Материал корпуса: ЛДСП</p>
+<p class="card-text m-0">Стиль: <?php echo $filter ["style"];?></p>
+<p class="card-text m-0">Цвет: <?php echo $filter ["color"];?></p>
+<p class="card-text m-0">Материал: <?php echo $filter ["material"];?></p>
 <p class="card-text m-0">Наполнение: lectus morbi rhoncus</p>
-<p class="card-text m-0"><b>от 56 200 ₽</b></p>
+<p class="card-text m-0"><b>от <?php echo $filter ["price"];?> ₽</b></p>
 
 
 <a href="#"
