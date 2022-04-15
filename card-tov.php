@@ -5,10 +5,12 @@
 <?php require 'main-parts/header.php'; ?>
 
 
-
-<main style="margin-top: 7%;">
+<?php $filter = get_filter_by_id($_GET['id']);?>
+<main style="margin-top: 150px;">
 
 <div class="container mb-5">
+
+
 
 <div class="row filter">
 
@@ -31,6 +33,22 @@
 <span class="carousel-control-next-icon" aria-hidden="true"></span>
 <span class="visually-hidden">Next</span>
 </button>
+</div>
+</div>
+<div class="col-sm-6 mt-5">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed erat lobortis erat ut amet velit at sagittis. In nunc id diam ut risus. Quam elementum viverra et quis diam accumsan, lectus morbi rhoncus. Commodo, lacus molestie enim vitae consequat tellus.</p>
+<div class="card-body lh-lg">
+<p class="card-text m-0">Стиль: Классический</p>
+<p class="card-text m-0">Цвет: Черный</p>
+<p class="card-text m-0">Материал: ЛДСП</p>
+<p class="card-text m-0">Материал корпуса: ЛДСП</p>
+<p class="card-text m-0">Наполнение: lectus morbi rhoncus</p>
+<p class="card-text m-0"><b>от 56 200 ₽</b></p>
+
+
+<a href="#"
+class="btn btn-primary btn-danger b-0 rounded-0 mt-5 d-flex justify-content-center"
+style="padding: 1% 1% 1% 1%;">Рассчитать стоимость &#8594;</a>
 </div>
 </div>
 </div>

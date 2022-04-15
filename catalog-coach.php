@@ -102,20 +102,22 @@ aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 <div class="row">
 
 <?php
-$filter = get_filter_all ();
-foreach ($filter as $filter): ?>
+$filters = get_filters_all ();
+foreach ($filters as $filters): ?>
 
-<div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filter ["color_id"];?> <?php echo $filter ["category"];?>">
+<?php $category_name = get_category_by_id($filters["category_id"]); ?>
+
+<div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filters ["color_id"];?> <?php echo $category_name; ?>">
 <div class="card mb-2 b-0 rounded-0">
-<img src="/img/card_tov/<?php echo $filter ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+<img src="/img/card_tov/<?php echo $filters ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
 <div class="card-body">
-<h5 class="card-title m-0">Название: <?php echo $filter ["tittle"];?></h5>
-<p class="card-text m-0">Стиль: <?php echo $filter ["style"];?></p>
-<p class="card-text m-0">Цвет: <?php echo $filter ["color"];?></p>
-<p class="card-text m-0">Материал: <?php echo $filter ["material"];?></p>
+<h5 class="card-title m-0">Название: <?php echo $filters ["tittle"];?></h5>
+<p class="card-text m-0">Стиль: <?php echo $filters ["style"];?></p>
+<p class="card-text m-0">Цвет: <?php echo $filters ["color"];?></p>
+<p class="card-text m-0">Материал: <?php echo $filters ["material"];?></p>
 <a href="#"
 class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-style="padding: 1% 2% 1% 2%;"><?php echo $filter ["price"];?> ₽ &#8594;</a>
+style="padding: 1% 2% 1% 2%;"><?php echo $filters ["price"];?> ₽ &#8594;</a>
 </div>
 </div>
 </div>
