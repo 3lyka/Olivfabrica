@@ -115,7 +115,7 @@ foreach ($filterscloset as $filterscloset): ?>
 <p class="card-text m-0">Стиль: <?php echo $filterscloset ["style"];?></p>
 <p class="card-text m-0">Цвет: <?php echo $filterscloset ["color"];?></p>
 <p class="card-text m-0">Материал: <?php echo $filterscloset ["material"];?></p>
-<a href="card-tov-page/card-tov-closet.php?id=<?php echo $filterscloset ["id"];?>"
+<a href="http://olivfabrica/catalog/card-tov-page/card-tov-closet.php?id=<?php echo $filterscloset ["id"];?>"
 class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
 style="padding: 1% 2% 1% 2%;">от <?php echo $filterscloset ["price"];?> ₽ &#8594;</a>
 </div>
