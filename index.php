@@ -15,8 +15,6 @@
 
 <?php require 'block-item/forms-free-design.php'; ?>
 
-<?php require 'block-item/index-catalog.php'; ?>
-
 <?php require 'block-item/sale-catalog.php'; ?>
 
 <?php require 'block-item/forms-red.php'; ?>
@@ -24,6 +22,8 @@
 <?php require 'block-item/modal-window.php'; ?>
 
 <?php require 'block-item/why-me.php'; ?>
+
+<?php require 'block-item/forms-free-design.php'; ?>
 
 <?php require 'block-item/company.php'; ?>
 
