@@ -102,22 +102,22 @@ aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 <div class="row">
 
 <?php
-$filters = get_filters_all ();
-foreach ($filters as $filters): ?>
+$filtersteach = get_filtersteach_all ();
+foreach ($filtersteach as $filtersteach): ?>
 
-<?php $category_name = get_category_by_id($filters["category_id"]); ?>
+<?php $category_name = get_category_by_id($filtersteach["category_id"]); ?>
 
-<div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filters ["color_id"];?> <?php echo $category_name; ?>">
+<div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filtersteach ["color_id"];?> <?php echo $category_name; ?>">
 <div class="card mb-2 b-0 rounded-0">
-<img src="/img/card_tov/<?php echo $filters ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+<img src="/img/card_tov/<?php echo $filtersteach ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
 <div class="card-body">
-<h5 class="card-title m-0">Название: <?php echo $filters ["tittle"];?></h5>
-<p class="card-text m-0">Стиль: <?php echo $filters ["style"];?></p>
-<p class="card-text m-0">Цвет: <?php echo $filters ["color"];?></p>
-<p class="card-text m-0">Материал: <?php echo $filters ["material"];?></p>
-<a href="card-tov-page/card-tov-coach.php?id=<?php echo $filters ["id"];?>"
+<h5 class="card-title m-0">Название: <?php echo $filtersteach ["tittle"];?></h5>
+<p class="card-text m-0">Стиль: <?php echo $filtersteach ["style"];?></p>
+<p class="card-text m-0">Цвет: <?php echo $filtersteach ["color"];?></p>
+<p class="card-text m-0">Материал: <?php echo $filtersteach ["material"];?></p>
+<a href="card-tov-page/card-tov-teach.php?id=<?php echo $filtersteach ["id"];?>"
 class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-style="padding: 1% 2% 1% 2%;">от <?php echo $filters ["price"];?> ₽ &#8594;</a>
+style="padding: 1% 2% 1% 2%;">от <?php echo $filtersteach ["price"];?> ₽ &#8594;</a>
 </div>
 </div>
 </div>

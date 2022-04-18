@@ -23,7 +23,7 @@
                                     <div class="col-megamenu">
                                         <h6 class="title">Кухни</h6>
                                         <ul class="list-unstyled lh-lg">
-                                            <li><a class="text-decoration-none text-dark" href="#">Классический стиль</a></li>
+                                            <li><a class="text-decoration-none text-dark" href="/catalog/catalog-coach.php">Классический стиль</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>
@@ -35,7 +35,7 @@
                                     <div class="col-megamenu">
                                         <h6 class="title">Техника</h6>
                                         <ul class="list-unstyled lh-lg">
-                                            <li><a class="text-decoration-none text-dark" href="#">Мойки</a></li>
+                                            <li><a class="text-decoration-none text-dark" href="/catalog/catalog-teach.php">Мойки</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Смесители</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Варочные панели</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Вытяжки</a></li>
@@ -47,7 +47,7 @@
                                     <div class="col-megamenu">
                                         <h6 class="title">Шкафы купе</h6>
                                         <ul class="list-unstyled lh-lg">
-                                            <li><a class="text-decoration-none text-dark" href="#">Custom Menu</a></li>
+                                            <li><a class="text-decoration-none text-dark" href="/catalog/catalog-closet.php">Custom Menu</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Custom Menu</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Custom Menu</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Custom Menu</a></li>
