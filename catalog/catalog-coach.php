@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require 'main-parts/head.php'; ?>
+<?php require '../main-parts/head.php'; ?>
 
 <body>
 
-<?php require 'main-parts/header.php'; ?>
+<?php require '../main-parts/header.php'; ?>
 
 <main style="margin-top:180px;">
 <div class="container p-0 m-0 m-auto">
@@ -130,10 +130,10 @@ style="padding: 1% 2% 1% 2%;">от <?php echo $filters ["price"];?> ₽ &#8594;<
 
 </div>
 </div>
-<?php require 'block-item/forms-free-design.php'; ?>
+<?php require '../block-item/forms-free-design.php'; ?>
 </main>
 
-<?php require 'main-parts/footer.php'; ?>
+<?php require '../main-parts/footer.php'; ?>
 
 
 <!--

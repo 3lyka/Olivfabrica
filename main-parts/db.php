@@ -8,11 +8,20 @@ $password = "";
 $db = new PDO("mysql:host=$dbhost; dbname=$dbname",$username, $password );
 
 //вывод данных на index.pph популярные товары
-function get_swiper_all () {
+function get_swipers_all () {
     global $db;
-    $swiper = $db -> query("SELECT * FROM card");
-    return $swiper;
+    $swipers = $db -> query("SELECT * FROM card");
+    return $swipers;
 }
+
+function get_swiper_by_id($id) {
+    global $db;
+    $swipers = $db -> query("SELECT * FROM card WHERE id = $id");
+    foreach ($swipers as $swiper) {
+        return $swiper;
+    }
+}
+
 //вывод данных на index.php акции
 function get_slide_all () {
     global $db;

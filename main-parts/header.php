@@ -5,7 +5,7 @@
         <nav class="navbar navbar-expand-lg navbar-light rounded-0">
         <div class="container-fluid">
             <div class="good_company d-flex justify-content-start">
-                <img src="img/logo/logo.svg" class="img-fluid rounded-0" alt="...">
+                <img src="/img/logo/logo.svg" class="img-fluid rounded-0" alt="...">
                 <p class="mt-3 ms-2 fw-bold" style="color: #127A7B;">Оливковая ветвь</p>
             </div>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">

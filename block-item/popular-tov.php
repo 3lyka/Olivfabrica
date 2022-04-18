@@ -8,20 +8,19 @@
                     <div class="swiper-wrapper mb-5">
 
                     <?php
-                     $swiper = get_swiper_all ();
-                     foreach ($swiper as $swiper): ?>
-
+                     $swipers = get_swipers_all ();
+                     foreach ($swipers as $swipers): ?>
                             <div class="swiper-slide mb-5">
                             <div class="card b-0 rounded-0">
-                                <img src="/img/card_tov/<?php echo $swiper ["img"];?>" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+                                <img src="/img/card_tov/<?php echo $swipers ["img"];?>" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?php echo $swiper ["tittle"];?></h5>
-                                    <p class="card-text m-0"><?php echo $swiper ["style"];?></p>
-                                    <p class="card-text m-0"><?php echo $swiper ["color"];?></p>
-                                    <p class="card-text m-0"><?php echo $swiper ["material"];?></p>
-                                    <a href="#"
+                                    <h5 class="card-title"><?php echo $swipers ["tittle"];?></h5>
+                                    <p class="card-text m-0"><?php echo $swipers ["style"];?></p>
+                                    <p class="card-text m-0"><?php echo $swipers ["color"];?></p>
+                                    <p class="card-text m-0"><?php echo $swipers ["material"];?></p>
+                                    <a href="card-tov.php?id=<?php echo $swipers ["id"];?>"
                                         class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-                                        style="padding: 1% 2% 1% 2%;"><?php echo $swiper ["price"];?> ₽ &#8594;</a>
+                                        style="padding: 1% 2% 1% 2%;"><?php echo $swipers ["price"];?> ₽ &#8594;</a>
                                 </div>
                             </div>
                         </div>
