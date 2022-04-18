@@ -19,7 +19,7 @@ foreach ($swipers as $swipers): ?>
 <p class="card-text m-0">Стиль: <?php echo $swipers ["style"];?></p>
 <p class="card-text m-0">Цвет: <?php echo $swipers ["color"];?></p>
 <p class="card-text m-0">Материал: <?php echo $swipers ["material"];?></p>
-<a href="/catalog/card-tov-page/card-tov-teach.php?id=<?php echo $swipers ["id"];?>"
+<a href="/catalog/card-tov-page/card-tov-<?php echo $swipers ["group_category"];?>.php?id=<?php echo $swipers ["id"];?>"
 class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
 style="padding: 1% 2% 1% 2%;">от <?php echo $swipers ["price"];?> ₽ &#8594;</a>
 </div>

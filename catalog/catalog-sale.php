@@ -136,7 +136,7 @@ style="background-color: #07607C;"><?php echo $slide ["sale"];?>%</p>
 <p class="card-text m-0">Стиль: <?php echo $slide ["style"];?></p>
 <p class="card-text m-0">Цвет: <?php echo $slide ["color"];?></p>
 <p class="card-text m-0">Материал: <?php echo $slide ["material"];?></p>
-<a href="catalog/card-tov-page/card-tov-teach.php?id=<?php echo $slide ["id"];?>"
+<a href="/catalog/card-tov-page/card-tov-<?php echo $slide ["group_category"];?>.php?id=<?php echo $slide ["id"];?>"
 class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
 style="padding: 1% 2% 1% 2%;">от <?php echo $slide ["price"];?> ₽ &#8594;</a>
 </div>
