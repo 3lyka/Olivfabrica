@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container mt-5" id="company">
 
 <div class="row">
     <img src="img/card_tov/card-tovar.png" class="col-sm-6 mt-4 w__h__img" alt="...">
@@ -17,6 +17,5 @@
             space and should not really be read.
         </p>
     </div>
-</div>
 </div>
 </div>
