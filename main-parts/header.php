@@ -60,7 +60,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item active fw-normal"> <a class="nav-link" href="#">Оплата </a> </li>
-                    <li class="nav-item active fw-normal"> <a class="nav-link" href="#">Акции </a> </li>
+                    <li class="nav-item active fw-normal"> <a class="nav-link" href="/catalog/catalog-sale.php">Акции </a> </li>
                     <li class="nav-item active fw-normal"> <a class="nav-link" href="#">О компании </a> </li>
                     <li class="nav-item active fw-normal"> <a class="nav-link" href="#">Контакты </a> </li>
                 </ul>
