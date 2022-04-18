@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require '../main-parts/head.php'; ?>
+<?php require '../../main-parts/head.php'; ?>
 <body>
-<?php require '../main-parts/header.php'; ?>
+<?php require '../../main-parts/header.php'; ?>
 
 
 <?php $filter = get_filter_by_id($_GET['id']);?>
@@ -55,12 +55,12 @@ style="padding: 1% 1% 1% 1%;">Рассчитать стоимость &#8594;</a
 
 </div>
 
-<?php require '../block-item/popular-tov.php'; ?>
-<?php require '../block-item/forms-free-design.php'; ?>
+<?php require '../../block-item/popular-tov.php'; ?>
+<?php require '../../block-item/forms-free-design.php'; ?>
 </main>
 
 
-<?php require '../main-parts/footer.php'; ?>
+<?php require '../../main-parts/footer.php'; ?>
 
 <!--
 JS файлы

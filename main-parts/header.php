@@ -4,10 +4,12 @@
         <!-- ============= COMPONENT ============== -->
         <nav class="navbar navbar-expand-lg navbar-light rounded-0">
         <div class="container-fluid">
+            <a class="text-decoration-none" href="http://olivfabrica/index.php">
             <div class="good_company d-flex justify-content-start">
                 <img src="/img/logo/logo.svg" class="img-fluid rounded-0" alt="...">
                 <p class="mt-3 ms-2 fw-bold" style="color: #127A7B;">Оливковая ветвь</p>
             </div>
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
