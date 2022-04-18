@@ -17,7 +17,7 @@ href="#">Главная</a></li>
 <li class="breadcrumb-item active"><a class="text-decoration-none fw-light text-secondary"
 href="#">Каталог</a></li>
 <li class="breadcrumb-item active"><a class="text-decoration-none fw-light text-secondary"
-href="#">Кухни</a></li>
+href="#">Шкафы купе</a></li>
 </ol>
 </nav>
 <h3>Каталог</h3>
@@ -102,22 +102,22 @@ aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 <div class="row">
 
 <?php
-$filters = get_filters_all ();
-foreach ($filters as $filters): ?>
+$filterscloset = get_filterscloset_all ();
+foreach ($filterscloset as $filterscloset): ?>
 
-<?php $category_name = get_category_by_id($filters["category_id"]); ?>
+<?php $category_name = get_category_by_id($filterscloset["category_id"]); ?>
 
-<div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filters ["color_id"];?> <?php echo $category_name; ?>">
+<div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filterscloset ["color_id"];?> <?php echo $category_name; ?>">
 <div class="card mb-2 b-0 rounded-0">
-<img src="/img/card_tov/<?php echo $filters ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
+<img src="/img/card_tov/<?php echo $filterscloset ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
 <div class="card-body">
-<h5 class="card-title m-0">Название: <?php echo $filters ["tittle"];?></h5>
-<p class="card-text m-0">Стиль: <?php echo $filters ["style"];?></p>
-<p class="card-text m-0">Цвет: <?php echo $filters ["color"];?></p>
-<p class="card-text m-0">Материал: <?php echo $filters ["material"];?></p>
-<a href="card-tov-page/card-tov-coach.php?id=<?php echo $filters ["id"];?>"
+<h5 class="card-title m-0">Название: <?php echo $filterscloset ["tittle"];?></h5>
+<p class="card-text m-0">Стиль: <?php echo $filterscloset ["style"];?></p>
+<p class="card-text m-0">Цвет: <?php echo $filterscloset ["color"];?></p>
+<p class="card-text m-0">Материал: <?php echo $filterscloset ["material"];?></p>
+<a href="card-tov-page/card-tov-closet.php?id=<?php echo $filterscloset ["id"];?>"
 class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
-style="padding: 1% 2% 1% 2%;">от <?php echo $filters ["price"];?> ₽ &#8594;</a>
+style="padding: 1% 2% 1% 2%;">от <?php echo $filterscloset ["price"];?> ₽ &#8594;</a>
 </div>
 </div>
 </div>

@@ -5,8 +5,8 @@
 <?php require '../../main-parts/header.php'; ?>
 
 
-<?php $filter = get_filter_by_id($_GET['id']);?>
-<?php $category_name = get_category_by_id($filters["category_id"]); ?>
+<?php $filter = get_filtercloset_by_id($_GET['id']);?>
+<?php $category_name = get_category_by_id($filterscloset["category_id"]); ?>
 <main style="margin-top: 150px;">
 
 <div class="container mb-5">

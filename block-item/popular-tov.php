@@ -18,7 +18,7 @@
                                     <p class="card-text m-0"><?php echo $swipers ["style"];?></p>
                                     <p class="card-text m-0"><?php echo $swipers ["color"];?></p>
                                     <p class="card-text m-0"><?php echo $swipers ["material"];?></p>
-                                    <a href="card-tov.php?id=<?php echo $swipers ["id"];?>"
+                                    <a href="http://olivfabrica/catalog/card-tov-page/card-tov-coach.php?id=<?php echo $swipers ["id"];?>"
                                         class="btn btn-primary btn-danger b-0 rounded-0 mt-3 ms-2 d-flex justify-content-center"
                                         style="padding: 1% 2% 1% 2%;"><?php echo $swipers ["price"];?> ₽ &#8594;</a>
                                 </div>

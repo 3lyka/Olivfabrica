@@ -29,7 +29,7 @@ function get_slide_all () {
     return $slide;
 }
 
-//вывод данных на catalog-coach.php по ее id
+//вывод данных на категории по ее id
 function get_category_by_id($id) {
     global $db;
     $categories = $db -> query("SELECT * FROM categories WHERE id = $id");
@@ -48,6 +48,36 @@ function get_filters_all () {
 function get_filter_by_id($id) {
     global $db;
     $filters = $db -> query("SELECT * FROM catalogcoach WHERE id = $id");
+    foreach ($filters as $filter) {
+        return $filter;
+    }
+}
+
+//Получение всех товаров
+function get_filterscloset_all () {
+    global $db;
+    $filters = $db -> query("SELECT * FROM catalogcloset");
+    return $filters;
+}
+//шаблон карточки товара
+function get_filtercloset_by_id($id) {
+    global $db;
+    $filters = $db -> query("SELECT * FROM catalogcloset WHERE id = $id");
+    foreach ($filters as $filter) {
+        return $filter;
+    }
+}
+
+//Получение всех товаров
+function get_filtersteach_all () {
+    global $db;
+    $filters = $db -> query("SELECT * FROM catalogteach");
+    return $filters;
+}
+//шаблон карточки товара
+function get_filterteach_by_id($id) {
+    global $db;
+    $filters = $db -> query("SELECT * FROM catalogteach WHERE id = $id");
     foreach ($filters as $filter) {
         return $filter;
     }
