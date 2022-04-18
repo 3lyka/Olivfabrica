@@ -4,7 +4,7 @@
         <!-- ============= COMPONENT ============== -->
         <nav class="navbar navbar-expand-lg navbar-light rounded-0">
         <div class="container-fluid">
-            <a class="text-decoration-none" href="http://olivfabrica/index.php">
+            <a class="text-decoration-none" href="/index.php">
             <div class="good_company d-flex justify-content-start">
                 <img src="/img/logo/logo.svg" class="img-fluid rounded-0" alt="...">
                 <p class="mt-3 ms-2 fw-bold" style="color: #127A7B;">Оливковая ветвь</p>
@@ -23,7 +23,7 @@
                                     <div class="col-megamenu">
                                         <h6 class="title">Кухни</h6>
                                         <ul class="list-unstyled lh-lg">
-                                            <li><a class="text-decoration-none text-dark" href="/catalog/catalog-coach.php">Классический стиль</a></li>
+                                            <li><a class="text-decoration-none text-dark" href="/catalog/catalog-coach.php" >Классический стиль</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Современный стиль</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Хай-тек кухни</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Кухни в стиле модерн</a></li>

@@ -22,8 +22,8 @@ href="#">Кухни</a></li>
 </nav>
 <h3>Каталог</h3>
 <div id="myBtnContainer" class="m-0 p-3">
-<button class="btn active" onclick="filterSelection('all')">Все товары</button>
-<button class="btn" onclick="filterSelection('hi-tech')"> Хай-тек</button>
+<button class="btn" onclick="filterSelection('all')">Все товары</button>
+<button class="btn" onclick="filterSelection('hi-tech')" id="coach-hi-tech"> Хай-тек</button>
 <button class="btn" onclick="filterSelection('modern')"> Модерн</button>
 </div>
 </div>
