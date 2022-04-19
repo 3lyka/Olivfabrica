@@ -67,7 +67,7 @@
             </div> <!-- navbar-collapse.// -->
         </div>
         <a class="navbar-brand" href="#"><span class="fw-bold fs-5"> 8 812 317 22 42 </span>
-            <br><img src="img/logo/map-pin.svg" alt="" class="p-0 m-0"><span class="fs-6"> Санкт Петербург</span></a> <!-- container-fluid.// -->
+            <br><img src="/img/logo/map-pin.svg" alt="" class="p-0 m-0"><span class="fs-6"> Санкт Петербург</span></a> <!-- container-fluid.// -->
         </nav>
 
     </div>
