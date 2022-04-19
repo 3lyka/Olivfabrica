@@ -59,10 +59,10 @@
                             </div><!-- end row --> 
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
-                    <li class="nav-item active fw-normal"> <a class="nav-link" href="#">Оплата </a> </li>
+                    <li class="nav-item active fw-normal"> <a class="nav-link" href="http://olivfabrica/page/buy.php">Оплата </a> </li>
                     <li class="nav-item active fw-normal"> <a class="nav-link" href="/catalog/catalog-sale.php">Акции </a> </li>
-                    <li class="nav-item active fw-normal"> <a class="nav-link" href="#company">О компании </a> </li>
-                    <li class="nav-item active fw-normal"> <a class="nav-link" href="#">Контакты </a> </li>
+                    <li class="nav-item active fw-normal"> <a class="nav-link" href="#">О компании </a> </li>
+                    <li class="nav-item active fw-normal"> <a class="nav-link" href="http://olivfabrica/page/buy.php">Контакты </a> </li>
                 </ul>
             </div> <!-- navbar-collapse.// -->
         </div>
