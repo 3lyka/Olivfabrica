@@ -39,6 +39,7 @@
 JS файлы
 -->
 <!-- Swiper JS -->
+
 <script src="js/swiper-bundle.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jQuery.js"></script>
