@@ -10,7 +10,7 @@ $db = new PDO("mysql:host=$dbhost; dbname=$dbname",$username, $password );
 //вывод данных на index.pph популярные товары
 function get_swipers_all () {
     global $db;
-    $swipers = $db -> query("SELECT * FROM card");
+    $swipers = $db -> query("SELECT * FROM card ORDER BY id DESC");
     return $swipers;
 }
 
@@ -41,7 +41,7 @@ function get_category_by_id($id) {
 //Получение всех товаров
 function get_filters_all () {
     global $db;
-    $filters = $db -> query("SELECT * FROM catalogcoach");
+    $filters = $db -> query("SELECT * FROM catalogcoach ORDER BY id DESC");
     return $filters;
 }
 //шаблон карточки товара
@@ -56,7 +56,7 @@ function get_filter_by_id($id) {
 //Получение всех товаров
 function get_filterscloset_all () {
     global $db;
-    $filters = $db -> query("SELECT * FROM catalogcloset");
+    $filters = $db -> query("SELECT * FROM catalogcloset ORDER BY id DESC");
     return $filters;
 }
 //шаблон карточки товара
@@ -71,7 +71,7 @@ function get_filtercloset_by_id($id) {
 //Получение всех товаров
 function get_filtersteach_all () {
     global $db;
-    $filters = $db -> query("SELECT * FROM catalogteach");
+    $filters = $db -> query("SELECT * FROM catalogteach ORDER BY id DESC");
     return $filters;
 }
 //шаблон карточки товара
