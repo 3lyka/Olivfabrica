@@ -107,7 +107,7 @@ foreach ($filterscloset as $filterscloset): ?>
 
 <?php $category_name = get_category_by_id($filterscloset["category_id"]); ?>
 
-<div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filterscloset ["color_id"];?> <?php echo $category_name; ?>">
+<div class="filterDiv col-lg-3 col-sm-6 mb-3 center_card <?php echo $filterscloset ["color_id"];?> <?php echo $category_name; ?>">
 <div class="card mb-2 b-0 rounded-0">
 <img src="/img/card_tov/<?php echo $filterscloset ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
 <div class="card-body">
@@ -139,6 +139,63 @@ style="padding: 1% 2% 1% 2%;">от <?php echo $filterscloset ["price"];?> ₽ &#
 <!--
 JS файлы
 -->
+
+<script>
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Добавить класс "show" (display:block) к отфильтрованным элементам и удалите класс "show" из элементов, которые не выбраны
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Показать отфильтрованные элементы
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Скрыть элементы, которые не выбраны
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Добавить активный класс к текущей кнопке управления (выделите ее)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+  $(document).mouseup(function (e){  
+    var div = $(".close-on");  //класс элемента вне которого клик
+    if (!div.is(e.target) && div.has(e.target).length === 0) {  
+            div.removeClass('active');  
+    }
+  });
+}
+
+ </script>
 <!-- Swiper JS -->
 <script src="/js/swiper-bundle.js"></script>
 <script src="/js/bootstrap.js"></script>

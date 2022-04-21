@@ -22,7 +22,7 @@ href="#">Кухни</a></li>
 </nav>
 <h3>Каталог</h3>
 <div id="myBtnContainer" class="m-0 p-3">
-<button class="btn" onclick="filterSelection('all')">Все товары</button>
+<button class="btn active" onclick="filterSelection('all')">Все товары</button>
 <button class="btn" onclick="filterSelection('hi-tech')" id="coach-hi-tech"> Хай-тек</button>
 <button class="btn" onclick="filterSelection('modern')"> Модерн</button>
 </div>
@@ -51,51 +51,6 @@ data-bs-parent="#accordionExample">
 </div>
 </div>
 </div>
-<div class="accordion accordion mb-3 col-md-3 col-sm-12" id="accordionFlushExample">
-<div class="accordion-item">
-<h2 class="accordion-header" id="flush-headingOne">
-<button class="accordion-button collapsed text-info fw-bold border border-2 rounded-0 border-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-Фильтр
-</button>
-</h2>
-<div id="flush-collapseOne" class="accordion-collapse collapse"
-aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-<div class="accordion-body">
-
-<!--Тут подумай как следует, надо ли оно вообще? Может сделать также как и на сайте оливфабрики?-->    
-
-<p class="fw-bold m-2">Цвет</p>
-<div class="form-check" id="myBtnContainer">
-<div>
-<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('black')">
-<label class="form-check-label" for="defaultCheck1"> Черный</label>
-</div>
-<div>
-<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('red')">
-<label class="form-check-label" for="defaultCheck1"> Красный</label>
-</div>
-</div>
-<p class="fw-bold m-2">Цвет</p>
-<div class="form-check" id="myBtnContainer">
-<div>
-<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('black')">
-<label class="form-check-label" for="defaultCheck1"> Черный</label>
-</div>
-<div>
-<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="filterSelection('black')">
-<label class="form-check-label" for="defaultCheck1"> Черный</label>
-</div>
-<div>
-<button class="btn active mt-3" onclick="filterSelection('all')">Сбросить</button>
-</div>
-</div>
-
-
-
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="container mt-4 p-0 m-0 m-auto">
@@ -107,7 +62,7 @@ foreach ($filters as $filters): ?>
 
 <?php $category_name = get_category_by_id($filters["category_id"]); ?>
 
-<div class="filter col-lg-3 col-sm-6 mb-3 center_card <?php echo $filters ["color_id"];?> <?php echo $category_name; ?>">
+<div class="filterDiv col-lg-3 col-sm-6 mb-3 center_card <?php echo $filters ["color_id"];?> <?php echo $category_name; ?>">
 <div class="card mb-2 b-0 rounded-0">
 <img src="/img/card_tov/<?php echo $filters ["img"];?>.png" class="card-img-top p-0 b-0 rounded-0" alt="..." style="height: 14em;">
 <div class="card-body">
@@ -128,6 +83,7 @@ style="padding: 1% 2% 1% 2%;">от <?php echo $filters ["price"];?> ₽ &#8594;<
 </div>
 
 
+
 </div>
 </div>
 <?php require '../block-item/forms-free-design.php'; ?>
@@ -135,10 +91,66 @@ style="padding: 1% 2% 1% 2%;">от <?php echo $filters ["price"];?> ₽ &#8594;<
 
 <?php require '../main-parts/footer.php'; ?>
 
-
 <!--
 JS файлы
 -->
+
+<script>
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Добавить класс "show" (display:block) к отфильтрованным элементам и удалите класс "show" из элементов, которые не выбраны
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Показать отфильтрованные элементы
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Скрыть элементы, которые не выбраны
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Добавить активный класс к текущей кнопке управления (выделите ее)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+  $(document).mouseup(function (e){  
+    var div = $(".close-on");  //класс элемента вне которого клик
+    if (!div.is(e.target) && div.has(e.target).length === 0) {  
+            div.removeClass('active');  
+    }
+  });
+}
+ </script>
+
 <!-- Swiper JS -->
 <script src="/js/swiper-bundle.js"></script>
 <script src="/js/bootstrap.js"></script>
