@@ -35,15 +35,6 @@ margin: 0 auto;
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
 }
-
-.card {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    width: 18rem;
-    height: 25em;
-}
-
-
-
 .w__h__img {
     max-width: 100%;
     max-height: 450px;
@@ -164,7 +155,7 @@ img {
     display: none;
   }
   .multisteps-form__progress-btn.js-active {
-    color: #007bff;
+    color: #1A8AAD;
   }
   .multisteps-form__progress-btn.js-active:before {
     -webkit-transform: translateX(-50%) scale(1.2);
